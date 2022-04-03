@@ -19,10 +19,10 @@
 `docker push racarlosdavid/k8s_frontend`
 
 ## Creacion del cluster
-gcloud config get-value project
-gcloud config set project
-gcloud config set compute/zone us-central1-a
-gcloud container clusters create cluster-k8s-conferencia --num-nodes=2 --tags=all-in,all-out --machine-type=n1-standard-2 --no-enable-network-policy
+`gcloud config get-value project`
+`gcloud config set project`
+`gcloud config set compute/zone us-central1-a`
+`gcloud container clusters create cluster-k8s-conferencia --num-nodes=2 --tags=all-in,all-out --machine-type=n1-standard-2 --no-enable-network-policy`
 
 ## Instalacion de Ingress
 `helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx`
